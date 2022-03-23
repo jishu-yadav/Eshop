@@ -1,80 +1,268 @@
 {
- 
+ 
+
+
+
+
   "scripts": {
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "start": "nodemon backend/server",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "client": "npm start --prefix frontend",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "dev": "concurrently \"npm run server\" \"npm run client\"",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "data:import": "node backend/seeder",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "data:destroy": "node backend/seeder -d",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
- 
+ 
+
+
+
+
   },
- 
+ 
+
+
+
+
   "dependencies": {
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "axios": "^0.26.1",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "colors": "^1.4.0",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "concurrently": "^7.0.0",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "dotenv": "^10.0.0",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "express": "^4.17.3",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "mongoose": "^6.2.8",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "react-scripts": "^5.0.0"
- 
+ 
+
+
+
+
   },
- 
+ 
+
+
+
+
   "name": "ready-online",
- 
+ 
+
+
+
+
   "description": "MERN shopping Cart App",
- 
+ 
+
+
+
+
   "version": "1.0.0",
- 
+ 
+
+
+
+
   "main": "server.js",
- 
+ 
+
+
+
+
   "repository": {
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "type": "git",
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "url": "git+https://github.com/jishu-yadav/Ready-Online.git"
- 
+ 
+
+
+
+
   },
- 
+ 
+
+
+
+
   "author": "",
- 
+ 
+
+
+
+
   "license": "ISC",
- 
+ 
+
+
+
+
   "bugs": {
- 
-   
+ 
+
+
+
+
+   
+
+
+
+
   "url": "https://github.com/jishu-yadav/Ready-Online/issues"
- 
+ 
+
+
+
+
   },
- 
+ 
+
+
+
+
   "homepage": "https://github.com/jishu-yadav/Ready-Online#readme"
 }
