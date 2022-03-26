@@ -6,10 +6,11 @@ import User from '../models/userModel.js'
 // @route   POST /api/users/login
 // @access  Public
 const authUser = asyncHandler(async (req, res) => {
+
   const { email, password } = req.body
 
   const user = await User.findOne({ email })
-
+  
   if (user && (await user.matchPassword(password))) {
     res.json({
       _id: user._id,
@@ -56,6 +57,7 @@ const registerUser = asyncHandler(async (req, res) => {
     throw new Error('Invalid user data')
   }
 })
+
 
 // @desc    Get user profile
 // @route   GET /api/users/profile
