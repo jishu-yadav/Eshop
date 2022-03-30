@@ -29,7 +29,7 @@ import SpeechRecognition, {
 function App() {
   const commands = [
     {
-      command: ['Go to * page', 'Go to *', 'Open * page', 'Open *'],
+      command: ['Go to * page', 'Go to *', 'Open * page', 'Open *', '*'],
       callback: (redirectPage) => setRedirectUrl(redirectPage),
     },
   ]
