@@ -6,7 +6,7 @@ import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap'
 import SearchBox from './SearchBox'
 import { logout } from '../actions/userActions'
 
-const navbar = {backgroundColor: '#B762'};
+const navbar = {backgroundColor: '#b97a'};
 const Header = () => {
   const dispatch = useDispatch()
 
