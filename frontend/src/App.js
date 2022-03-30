@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import Header from './components/Header'
@@ -22,37 +22,37 @@ import SpeechRecognition, {
   useSpeechRecognition
 } from "react-speech-recognition";
 
-const App = () => {
-  // const commands = [
-  //   {
-  //     command: ["Go to * page", "Go to *", "Open * page", "Open *"],
-  //     callback: (redirectPage) => setRedirectUrl(redirectPage)
-  //   }
-  // ];
+function App ()  {
+  const commands = [
+    {
+      command: ["Go to * page", "Go to *", "Open * page", "Open *"],
+      callback: (redirectPage) => setRedirectUrl(redirectPage)
+    }
+  ];
 
-  // const { transcript } = useSpeechRecognition({ commands });
-  // const [redirectUrl, setRedirectUrl] = useState("");
-  // const pages = ["home", "cart", "", "contact"];
-  // const urls = {
-  //   home: "/",
-  //   blog: "/blog",
-  //   "new blog post": "/blog/new",
-  //   contact: "/contact"
-  // };
+  const { transcript } = useSpeechRecognition({ commands });
+  const [redirectUrl, setRedirectUrl] = useState("");
+  const pages = ["home", "cart", "", "contact"];
+  const urls = {
+    home: "/",
+    blog: "/blog",
+    "new blog post": "/blog/new",
+    contact: "/contact"
+  };
 
-  // if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-  //   return null;
-  // }
+  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+    return null;
+  }
 
-  // let redirect = "";
+  let redirect = "";
 
-  // if (redirectUrl) {
-  //   if (pages.includes(redirectUrl)) {
-  //     redirect = <Redirect to={urls[redirectUrl]} />;
-  //   } else {
-  //     redirect = <p>Could not find page: {redirectUrl}</p>;
-  //   }
-  // }
+  if (redirectUrl) {
+    if (pages.includes(redirectUrl)) {
+      redirect = <Redirect to={urls[redirectUrl]} />;
+    } else {
+      redirect = <p>Could not find page: {redirectUrl}</p>;
+    }
+  }
 
   return (
     <Router>
