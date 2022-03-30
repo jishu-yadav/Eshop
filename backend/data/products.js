@@ -1,31 +1,30 @@
 const products = [
   {
-    name: 'Airpods Wireless Bluetooth Headphones',
-    image: '/images/airpods.jpg',
+    name: 'Titan Eco Range Gents Men Steel Analogue watch NL1584SL03',
+    image: '/images/titan.jpg',
     description:
-      'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-    brand: 'Apple',
-    category: 'Electronics',
-    price: 10000,
-    countInStock: 10,
-    rating: 4.5,
-    numReviews: 12,
-  },
-  
-
-  {
-    name: 'Logitech G-Series Gaming Mouse',
-    image: '/images/mouse.jpg',
-    description:
-      'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
+      'This steel tone precision quartz watch features a date function and is tied together by the complimenting silver sunray dial enhanced with stick markers. ',
     brand: 'Logitech',
     category: 'Electronics',
-    price: 1995,
+    price: 2695,
     countInStock: 7,
+    rating: 4.3,
+    numReviews: 10,
+  },
+
+  {
+    name: 'Sony SRS-XB13 Extra BASS Wireless Portable Compact Speaker IP67 Waterproof Bluetooth, Black (SRSXB13/B)',
+    image: '/images/speaker.jpg',
+    description:
+      'The Sony SRS-XB13 is a sturdy and portable speaker that lasts for a long time, and you can conveniently carry it along. When it comes to sound quality, it has Sony Extra Bass and Sound Diffusion Processor to deliver a foot-thumping musical experience.',
+    brand: 'Logitech',
+    category: 'Electronics',
+    price: 3752,
+    countInStock: 9,
     rating: 4.0,
     numReviews: 10,
   },
-  
+
   {
     name: 'Sapiens: A Brief History of Humankind : Yuval Noah Harari',
     image: '/images/sapiens.png',
@@ -79,6 +78,71 @@ const products = [
   },
 
   {
+    name: 'Mueras Silk Satin Hair Scrunchies Ties Pack of 3 for Women and Girls (Grey, Pink and Black)',
+    image: '/images/scrunchie.jpg',
+    description:
+      'These hair ties are made using silk like pure satin fabric and comfortable elastic. Smooth and easy to slide out and thus prevents hair breakage and cares for thin, thick, curly & normal hair. You can comfortably wear on wrist too.',
+    brand: 'Mueras',
+    category: 'Accessories',
+    price: 300,
+    countInStock: 20,
+    rating: 3.8,
+    numReviews: 14,
+  },
+
+  {
+    name: 'Milton Aqua 1000 Stainless Steel Water Bottle, 1 pc, 950 ml, Silver',
+    image: '/images/bottle.jpg',
+    description:
+      'Single wall fridge bottle with inside outside stainless steel made of grade 304, which is rust free',
+    brand: 'Milton',
+    category: 'Home Appliances',
+    price: 340,
+    countInStock: 20,
+    rating: 3.9,
+    numReviews: 14,
+  },
+
+  {
+    name: 'NAPA HIDE Tan Crunch Leather Wallet for Men',
+    image: '/images/wallet.jpg',
+    description:
+      'NAPAHIDE is a luxury leather brand that makes impeccable quality leather wallets.Perfectly handmade with the finest of craftsmanship, each wallet is meticulously crafted with first-class raw material only. NAPAHIDE fine quality leather wallets are designed with elegance and distinctiveness.',
+    brand: 'NAPAHIDE',
+    category: 'Fashion',
+    price: 299,
+    countInStock: 20,
+    rating: 4.0,
+    numReviews: 14,
+  },
+
+  {
+    name: 'American Tourister Ivy Polypropylene 55 cms Black Hardsided Check-in Luggage (FO1 (0) 09 001) with TSA Lock',
+    image: '/images/suitcase.jpg',
+    description:
+      'Recessed TSA lock for a premium look and to provide foolproof security during your travel',
+    brand: 'American Tourister',
+    category: 'Travel',
+    price: 3399,
+    countInStock: 30,
+    rating: 4.0,
+    numReviews: 14,
+  },
+
+  {
+    name: 'American Tourister Ivy Polypropylene 55 cms Black Hardsided Check-in Luggage (FO1 (0) 09 001) with TSA Lock',
+    image: '/images/suitcase.jpg',
+    description:
+      'Recessed TSA lock for a premium look and to provide foolproof security during your travel',
+    brand: 'American Tourister',
+    category: 'Travel',
+    price: 3399,
+    countInStock: 30,
+    rating: 4.0,
+    numReviews: 14,
+  },
+
+  {
     name: 'Vault UK-2000C 23-Inch Solid Mahogany Top Premium Concert Ukulele With Gigbag',
     image: '/images/ukulele.jpg',
     description:
@@ -90,7 +154,6 @@ const products = [
     rating: 4.2,
     numReviews: 14,
   },
-
 ]
 
 export default products
