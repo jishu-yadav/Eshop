@@ -1,5 +1,9 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom'
+import React, { useState } from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+} from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -19,38 +23,38 @@ import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
 import OrderListScreen from './screens/OrderListScreen'
 import SpeechRecognition, {
-  useSpeechRecognition
-} from "react-speech-recognition";
+  useSpeechRecognition,
+} from 'react-speech-recognition'
 
-function App ()  {
+function App() {
   const commands = [
     {
-      command: ["Go to * page", "Go to *", "Open * page", "Open *"],
-      callback: (redirectPage) => setRedirectUrl(redirectPage)
-    }
-  ];
+      command: ['Go to * page', 'Go to *', 'Open * page', 'Open *'],
+      callback: (redirectPage) => setRedirectUrl(redirectPage),
+    },
+  ]
 
-  const { transcript } = useSpeechRecognition({ commands });
-  const [redirectUrl, setRedirectUrl] = useState("");
-  const pages = ["home", "cart", "profile", "login"];
+  const { transcript } = useSpeechRecognition({ commands })
+  const [redirectUrl, setRedirectUrl] = useState('')
+  const pages = ['home', 'cart', 'profile', 'login']
   const urls = {
-    home: "/",
-    profile: "/profile",
-    cart: "/cart",
-    login: "/login"
-  };
-
-  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
-    return null;
+    home: '/',
+    profile: '/profile',
+    cart: '/cart',
+    login: '/login',
   }
 
-  let redirect = "";
+  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+    return null
+  }
+
+  let redirect = ''
 
   if (redirectUrl) {
     if (pages.includes(redirectUrl)) {
-      redirect = <Redirect to={urls[redirectUrl]} />;
+      redirect = <Redirect to={urls[redirectUrl]} />
     } else {
-      redirect = <p>Could not find page: {redirectUrl}</p>;
+      redirect = <p>Could not find page: {redirectUrl}</p>
     }
   }
 
@@ -97,9 +101,7 @@ function App ()  {
         </Container>
       </main>
       <Footer />
-      
     </Router>
-    
   )
 }
 
