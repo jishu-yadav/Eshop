@@ -4,7 +4,7 @@ import {
   Route,
   Redirect,
 } from 'react-router-dom'
-import { Container } from 'react-bootstrap'
+import { Container, Button } from 'react-bootstrap'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeScreen from './screens/HomeScreen'
@@ -63,9 +63,10 @@ function App() {
       <Header />
       <main className='py-3'>
         <Container>
-        <p id="transcript">Speech: {transcript}</p>
-        <button onClick={SpeechRecognition.startListening}>Start</button>
-
+          <Button onClick={SpeechRecognition.startListening} type='submit' variant='outline-success' className='p-2'>
+            Voice Navigation
+          </Button> <p id="transcript">{transcript}</p>
+          
           <Route path='/order/:id' component={OrderScreen} />
           <Route path='/shipping' component={ShippingScreen} />
           <Route path='/payment' component={PaymentScreen} />
