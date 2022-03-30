@@ -14,7 +14,12 @@ const SearchBox = ({ history }) => {
   }
 
   return (
-    <Form onSubmit={submitHandler} inline>
+    <Form
+      style={{ display: 'flex !important' }}
+      onSubmit={submitHandler}
+      inline
+      className='formSuccess'
+    >
       <Form.Control
         type='text'
         name='q'
