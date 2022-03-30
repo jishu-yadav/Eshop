@@ -32,12 +32,12 @@ function App ()  {
 
   const { transcript } = useSpeechRecognition({ commands });
   const [redirectUrl, setRedirectUrl] = useState("");
-  const pages = ["home", "cart", "", "contact"];
+  const pages = ["home", "cart", "profile", "login"];
   const urls = {
     home: "/",
-    blog: "/blog",
-    "new blog post": "/blog/new",
-    contact: "/contact"
+    profile: "/profile",
+    cart: "/cart",
+    login: "/login"
   };
 
   if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
@@ -59,6 +59,9 @@ function App ()  {
       <Header />
       <main className='py-3'>
         <Container>
+        <p id="transcript">Transcript: {transcript}</p>
+        <button onClick={SpeechRecognition.startListening}>Start</button>
+
           <Route path='/order/:id' component={OrderScreen} />
           <Route path='/shipping' component={ShippingScreen} />
           <Route path='/payment' component={PaymentScreen} />
@@ -90,10 +93,13 @@ function App ()  {
             exact
           />
           <Route path='/' component={HomeScreen} exact />
+          {redirect}
         </Container>
       </main>
       <Footer />
+      
     </Router>
+    
   )
 }
 
