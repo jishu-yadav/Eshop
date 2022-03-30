@@ -59,7 +59,7 @@ function App ()  {
       <Header />
       <main className='py-3'>
         <Container>
-        <p id="transcript">Transcript: {transcript}</p>
+        <p id="transcript">Speech: {transcript}</p>
         <button onClick={SpeechRecognition.startListening}>Start</button>
 
           <Route path='/order/:id' component={OrderScreen} />
