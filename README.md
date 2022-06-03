@@ -27,8 +27,8 @@ Buyers can make their payment using cash on delivery or UPI(PayPal).
 Secure access to consumers’ confidential data.
 Better component design so that it is easy to identify any error if it occurs or make required changes.
 
-# Database Server: MongoDb
-# Client: Any Web browser
-# Frontend: ReactJs
-# Backend: NodeJs, ExpressJs
+Database Server: MongoDb
+Client: Any Web browser
+Frontend: ReactJs
+Backend: NodeJs, ExpressJs
 
