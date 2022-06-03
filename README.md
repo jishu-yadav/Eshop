@@ -1,6 +1,8 @@
 # Ready-Online 
 Category: A Web Application
 
+![image](https://user-images.githubusercontent.com/54631311/171797423-85cd3d20-3c39-4f8a-9bb3-7c529e985849.png)
+
 # Purpose: 
 A Full Stack MERN application to provide a platform to help people buy and sell products online without any hassle.
 
