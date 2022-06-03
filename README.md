@@ -1,7 +1,8 @@
 # Ready-Online 
 Category: A Web Application
 
-# Purpose: A Full Stack MERN Application to provide a platform to help people buy and sell products online without any hassle.
+# Purpose: 
+A Full Stack MERN application to provide a platform to help people buy and sell products online without any hassle.
 
 # Advantages of Sellers:
 Easy to find prospective leads.
@@ -25,4 +26,9 @@ Buyers can make their payment using cash on delivery or UPI(PayPal).
 24*7 availability
 Secure access to consumers’ confidential data.
 Better component design so that it is easy to identify any error if it occurs or make required changes.
+
+# Database Server: MongoDb
+# Client: Any Web browser
+# Frontend: ReactJs
+# Backend: NodeJs, ExpressJs
 
